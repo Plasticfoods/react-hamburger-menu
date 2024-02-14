@@ -4,7 +4,11 @@
   color-scheme: light dark;
   background-color: #09090B;
   color: rgba(255, 255, 255, 0.87);
-  min-height: 1000dvh;
+  min-height: 100dvh;
+}
+
+.home {
+  position: relative;
 }
 
 header {
@@ -16,7 +20,6 @@ header {
   padding-bottom: 1.2rem;
   width: 90%;
   margin-inline: auto;
-  overflow: hidden;
 
   display: grid;
   grid-template-columns: auto 1fr auto auto;
@@ -24,11 +27,13 @@ header {
   justify-content: center;
 }
 
+/* home width is 100% and home -> header -> header-inner -> nav-mobile, thats why home position is relative  */
 .nav-mobile {
-  position: fixed;
+  z-index: 99;
+  position: absolute;
   left: 0;
   right: 0;
-  top: 4rem;
+  top: 100%;
 }
 
 .nav-mobile ul {
