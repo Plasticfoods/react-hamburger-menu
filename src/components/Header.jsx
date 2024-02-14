@@ -18,7 +18,7 @@ export default function Header() {
                 </div>
                 <NavDesktop />
                 <div className="flex items-center">
-                    <Input type="search" placeholder="Search..." />
+                    <Input type="search" placeholder="Search documentation..." />
                 </div>
                 <Link className="flex items-center">
                     <MoonStar size={20} />
