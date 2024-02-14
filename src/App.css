@@ -4,7 +4,7 @@
   color-scheme: light dark;
   background-color: #09090B;
   color: rgba(255, 255, 255, 0.87);
-  min-height: 100dvh;
+  min-height: 1000dvh;
 }
 
 header {
@@ -22,6 +22,28 @@ header {
   grid-template-columns: auto 1fr auto auto;
   gap: 2rem;
   justify-content: center;
+}
+
+.nav-mobile {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 4rem;
+}
+
+.nav-mobile ul {
+  display: grid;
+  gap: .2rem;
+}
+
+.nav-mobile li {
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 

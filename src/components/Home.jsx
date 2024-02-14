@@ -6,7 +6,7 @@ function Home() {
         <div className="home">
             <Header />
             <main>
-                main
+                
             </main>
         </div>
     )

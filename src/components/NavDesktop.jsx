@@ -5,7 +5,7 @@ export default function NavDesktop() {
     
     return (
         <nav className="nav-desktop">
-            <ul className="flex gap-5">
+            <ul className="flex gap-5 items-center">
                 {navItems.map((navItem, index) => (
                     <li key={index}>
                         <Link className="text-gray-400">
