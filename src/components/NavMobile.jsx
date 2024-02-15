@@ -6,8 +6,8 @@ export default function NavMobile() {
     let navItemBgColor = '#09090B';
 
     return (
-        <nav className='nav-mobile'>
-            <ul style={{ backgroundColor: navItemBgColor }}>
+        <nav className='nav-mobile' style={{ backgroundColor: navItemBgColor }}>
+            <ul>
                 {navItems.map((navItem) => {
                     return (
                         <li key={navItem.title}>
