@@ -1,24 +1,32 @@
+:root {
+  --container-width: 95%;
+  --container-width-lg: 90%;
+  --bg-color: #09090B;
+}
 
 .App {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   color-scheme: light dark;
-  background-color: #09090B;
+  background-color: var(--bg-color);
   color: rgba(255, 255, 255, 0.87);
   min-height: 100dvh;
 }
 
 .home {
-  position: relative;
+  min-height: 100dvh;
+  display: grid;
+  grid-template-rows: auto 1fr;
 }
 
 header {
   border-bottom: 1px solid rgb(55 65 81);
+  position: relative;
 }
 
 .header-inner {
   padding-top: 1.2rem;
   padding-bottom: 1.2rem;
-  width: 90%;
+  width: var(--container-width-lg);
   margin-inline: auto;
 
   display: grid;
@@ -51,8 +59,11 @@ header {
   align-items: center;
 }
 
-
 @media (width < 768px) {
+  .header-inner {
+    width: var(--container-width);
+  }
+
   .nav-desktop, .logo {
     display: none;
   }
@@ -62,5 +73,20 @@ header {
     padding-bottom: .5rem;
     gap: 1rem;
   }
+
+  main {
+    width: var(--container-width);
+  }
 }
 
+
+/* Main  */
+
+main {
+  width: var(--container-width-lg);
+  margin-inline: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5rem;
+}

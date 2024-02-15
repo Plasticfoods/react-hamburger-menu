@@ -3,11 +3,12 @@ import { Link } from "react-router-dom";
 
 
 export default function NavMobile() {
+    let navItemBgColor = '#09090B';
+
     return (
         <nav className='nav-mobile'>
-            <ul>
+            <ul style={{ backgroundColor: navItemBgColor }}>
                 {navItems.map((navItem) => {
-
                     return (
                         <li key={navItem.title}>
                             <Link
