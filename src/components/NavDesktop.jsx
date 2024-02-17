@@ -8,7 +8,7 @@ export default function NavDesktop() {
             <ul className="flex gap-5 items-center">
                 {navItems.map((navItem, index) => (
                     <li key={index}>
-                        <Link className="text-gray-400">
+                        <Link className="text-gray-400 text-extrabold">
                             {navItem.name}
                         </Link>
                     </li>

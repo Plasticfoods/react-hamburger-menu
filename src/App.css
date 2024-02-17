@@ -4,11 +4,19 @@
   --bg-color: #09090B;
 }
 
-.App {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+.light {
+  background-color: white;
+  color: black;
+}
+
+.dark {
   color-scheme: light dark;
   background-color: var(--bg-color);
   color: rgba(255, 255, 255, 0.87);
+}
+
+.App {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   min-height: 100dvh;
 }
 
@@ -45,9 +53,10 @@ header {
   height: 100dvh;
   display: flex;
   flex-direction: column;
-  gap: 2.6rem;
+  gap: 2rem;
   padding-top: 2.5rem;
-  border-left: 1px solid white;
+  border-left: 2px solid yellow;
+  border-radius: 5px;
 }
 
 @media (width >= 768px) {
@@ -67,6 +76,7 @@ header {
 
 .link {
   font-weight: 500;
+  font-size: 1.2rem;
 }
 
 @media (width < 768px) {

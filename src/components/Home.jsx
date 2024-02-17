@@ -14,7 +14,7 @@ function Home() {
                         This is a simple app with a hamburger menu in React, using the CSS library Shadcn-UI
                     </p>
                     <div className="flex justify-center">
-                        <Button variant='secondary' className='text-base'>Get started</Button>
+                        <Button variant='default' className='text-base bg-white'>Get started</Button>
                     </div>
                 </div>
             </main>
